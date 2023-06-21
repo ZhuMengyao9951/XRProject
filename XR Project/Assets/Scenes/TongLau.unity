@@ -12802,7 +12802,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 94.3872, y: 3.12164, z: 59.557713}
+  m_ConnectedAnchor: {x: 5.1872025, y: 3.12164, z: 59.557713}
   serializedVersion: 2
   m_Spring: 10
   m_Damper: 0.2
@@ -14563,7 +14563,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.0376866, y: 0.4999999, z: 1.6653389}
+  m_ConnectedAnchor: {x: 1.037695, y: 0.4999999, z: 1.665347}
   serializedVersion: 2
   m_Spring: 60
   m_Damper: 0.2
@@ -25369,7 +25369,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 94.81269, y: 3.12164, z: 59.6556}
+  m_ConnectedAnchor: {x: 5.612691, y: 3.12164, z: 59.6556}
   serializedVersion: 2
   m_Spring: 10
   m_Damper: 0.2
@@ -44813,7 +44813,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.011142681, y: 0.4999999, z: 1.0662894}
+  m_ConnectedAnchor: {x: 0.011146908, y: 0.4999999, z: 1.0663375}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -95270,6 +95270,10 @@ PrefabInstance:
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: far clip plane
       value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4026531895
       objectReference: {fileID: 0}
     - target: {fileID: 19064736505062540, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_TargetPriorityMode
