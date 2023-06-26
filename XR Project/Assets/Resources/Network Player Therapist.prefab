@@ -186,9 +186,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6288736664534657461}
   - component: {fileID: 3974285573886906371}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Renderer_Teeth
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2183,9 +2183,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5105617221538356993}
   - component: {fileID: 5759426943459594783}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Renderer_EyeLeft
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2616,9 +2616,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1434565518929083884}
   - component: {fileID: 6692480332149825164}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Renderer_Head
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3111,6 +3111,7 @@ MonoBehaviour:
   rightHand: {fileID: 4347780759753794324}
   leftHandAnimator: {fileID: 4229961746109617293}
   rightHandAnimator: {fileID: 7609543655532463812}
+  HeadBodyOffset: {x: 0, y: 0.05, z: 0}
 --- !u!114 &4829638962957987591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3746,9 +3747,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1260561121408647537}
   - component: {fileID: 405901563181777548}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Renderer_EyeRight
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4156,12 +4157,12 @@ MonoBehaviour:
   leftHand:
     vrTarget: {fileID: 5318434366914361827}
     ikTarget: {fileID: 7548037860768064394}
-    trackingPositionOffset: {x: -0.03, y: -0.03, z: -0.12}
+    trackingPositionOffset: {x: -0.04, y: -0.03, z: -0.12}
     trackingRotationOffset: {x: 0, y: 90, z: 90}
   rightHand:
     vrTarget: {fileID: 4347780759753794324}
     ikTarget: {fileID: 7548037859822517163}
-    trackingPositionOffset: {x: -0.03, y: -0.03, z: -0.12}
+    trackingPositionOffset: {x: 0.04, y: -0.03, z: -0.12}
     trackingRotationOffset: {x: 0, y: -90, z: -90}
   turnSmoothness: 1
   ikHead: {fileID: 7548037859153677447}
@@ -4330,9 +4331,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5781661573482634189}
   - component: {fileID: 5509404552529962096}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Renderer_Hair
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

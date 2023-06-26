@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TherapistOutfitTop
+  m_Name: PatientMaleOutfitTop
   m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 9131710189037268923, guid: 4ce3087158b5c464ab2de6a63b001eab, type: 3}
+        m_Texture: {fileID: -3628616933784062661, guid: 8faddcebda978f84cb082ad9b25edd6a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 9131710189037268923, guid: 4ce3087158b5c464ab2de6a63b001eab, type: 3}
+        m_Texture: {fileID: -3628616933784062661, guid: 8faddcebda978f84cb082ad9b25edd6a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

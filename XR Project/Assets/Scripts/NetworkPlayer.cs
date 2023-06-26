@@ -21,6 +21,7 @@ public class NetworkPlayer : MonoBehaviour
     private Transform leftHandRig;
     private Transform rightHandRig;
 
+    [SerializeField] Vector3 HeadBodyOffset;
 
     // Start is called before the first frame update
     void Start()
@@ -32,15 +33,17 @@ public class NetworkPlayer : MonoBehaviour
         leftHandRig = rig.transform.Find("CameraOffset/LeftHand");
         rightHandRig = rig.transform.Find("CameraOffset/RightHand");
 
-        /*
         if (photonView.IsMine)
-        {
+        {            
             foreach (var item in GetComponentsInChildren<Renderer>())
             {
-                item.enabled = false;
-            }
+                if (item.gameObject.tag == "Invisible")
+                {
+                    item.gameObject.layer = LayerMask.NameToLayer("Invisible");
+                    //item.enabled = false;
+                }
+            } 
         }
-        */
     }
 
     // Update is called once per frame
@@ -52,10 +55,10 @@ public class NetworkPlayer : MonoBehaviour
             MapPosition(leftHand, leftHandRig);
             MapPosition(rightHand, rightHandRig);
 
+            //Used for hand model only.Not applicable to 3D avatar's hands.
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
         }
-
     }
 
     void UpdateHandAnimation(InputDevice targetDevice, Animator handAnimator)
@@ -81,7 +84,15 @@ public class NetworkPlayer : MonoBehaviour
 
     void MapPosition(Transform target, Transform rigTransform)
     {
-        target.position = rigTransform.position;
-        target.rotation = rigTransform.rotation;
+        if(rigTransform == headRig)
+        {
+            target.position = rigTransform.position - HeadBodyOffset;
+            target.rotation = rigTransform.rotation;
+        }
+        else if((rigTransform == leftHandRig) || (rigTransform == rightHandRig))
+        {
+            target.position = rigTransform.position;
+            target.rotation = rigTransform.rotation;
+        }
     }
 }
