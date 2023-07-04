@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Augmented Materiality Lab
-  productName: XR Palliative@AMLab_0626
+  productName: Virtual Reality Life Review Therapy@AMLab_0626
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
